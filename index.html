@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="celula ANIMAL.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.07502725692242951m 0.23091155333711771m 0.3576049279597881m" data-normal="0.6604595349745961m -0.09120798129020474m -0.745301487191664m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Membrana celular</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.12158677044226396m -0.10661244325568942m -0.39511101562992595m" data-normal="0.17061054283139213m 0.9799697438790564m 0.10271973401637277m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Citoplasma</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="0.10227759130410363m 0.13464488118206885m 0.00040465062472350155m" data-normal="0.9584349463144182m 0.2787669588070267m 0.06075719184392948m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Núcleo</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.1569512274791307m 0.035623781813701516m -0.11302391785220778m" data-normal="0.6253420324322526m 0.6673562052331704m 0.40445399962206097m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Envoltura nuclear</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="0.262539992952298m -0.04894088859874479m 0.025944826886290184m" data-normal="0.9409409536988426m -0.28665800733028324m 0.18015911990721944m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Retículo endoplasmático</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="-0.08330452206821248m 0.264846792164776m 0.09346494229192415m" data-normal="0.8814936903292978m -0.36715684928944303m 0.2969254484369524m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Aparato de Golgi</div>
+      </button><button class="Hotspot" slot="hotspot-8" data-position="0.2647912108564512m -0.10598776047551106m 0.24483505689963553m" data-normal="0.650166982924912m 0.43125482325349557m 0.6255415028076982m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Mitocondrias</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="0.3916067413273754m -0.15489924759984186m -0.15172311385775777m" data-normal="0.5622524568551267m 0.8227616821809763m 0.08327898351387283m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Lisosomas</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="0.3062767416895642m -0.15997629129441404m 0.1336133632094146m" data-normal="0.9661705821132426m 0.24171635939499608m -0.08993112842496365m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Vesículas</div>
+      </button><button class="Hotspot" slot="hotspot-11" data-position="-0.11327950566923661m 0.2773647822452984m -0.24145572140201121m" data-normal="0.9555674943982535m -0.2840536039284422m 0.07876746628340787m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Ribosomas</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/{{MODELVIEWER_VERSION}}/model-viewer.min.js"></script>
+  </body>
+</html>
